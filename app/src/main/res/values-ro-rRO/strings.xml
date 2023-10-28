@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AS</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Parola</string>
+    <string name="log_in">CONTECTEAZA-TE</string>
+    <string name="don_t_have_an_account_sign_up">Nu ai un cont? Inregistreaza-te!</string>
+    <string name="register">Intregistreaza-te</string>
+    <string name="name">Nume</string>
+    <string name="i_agree_with_the_terms_and_conditions">Sunt de acord cu Termenii si Conditiile</string>
+    <string name="email_field_can_not_be_empty">Campul email nu poate fi liber</string>
+    <string name="password_field_can_not_be_empty">Campul parola nu poate fi liber</string>
+    <string name="please_accept">Va rugam sa acceptati Termenii si Conditiile pentru a continua</string>
+    <string name="the_email_is_not_correct">E-mail-ul introdus este incorect</string>
+    <string name="password_must_have_at_leat_6_characters">Parola trebuie sa aiba cel putin 6 caractere</string>
+    <string name="registration_failed">Inregistrarea a esuat</string>
+    <string name="successfully_registered">Utilizatorul a fost inregistrat cu succes. Va rugam sa va conectati</string>
+
+</resources>

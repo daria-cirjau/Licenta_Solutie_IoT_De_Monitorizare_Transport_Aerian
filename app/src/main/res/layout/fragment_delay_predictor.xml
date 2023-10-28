@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustNothing"
+    android:background="@drawable/bcg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".mainpage.predict.DelayPredictorFragment">
+
+
+        <EditText
+            android:id="@+id/predictorFragmentTvDeparture"
+            android:layout_width="174dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Departure airport"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/predictorFragmentTvArrival"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/predictorFragmentTvArrival"
+            android:layout_width="210dp"
+            android:layout_height="49dp"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Arrival airport"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/predictorFragmentTvDeparture" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/predictorFragmentCvCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/predictorFragmentTvDeparture">
+
+            <CalendarView
+                android:id="@+id/predictorFragmentCalendarView"
+                android:layout_width="326dp"
+                android:layout_height="330dp" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/predictorFragmentBtnFind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@color/end_color"
+            android:foreground="@drawable/btn_ripple"
+            android:padding="10dp"
+            android:text="Find flights"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/predictorFragmentCvCalendar" />
+
+        <ListView
+            android:id="@+id/predictorFragmentListViewFlights"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/predictorFragmentBtnFind" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

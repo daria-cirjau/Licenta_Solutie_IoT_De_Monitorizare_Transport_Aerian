@@ -1,0 +1,66 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/mainFragmentImageViewPlanePicture"
+            android:layout_width="147dp"
+            android:layout_height="92dp"
+            android:src="@drawable/na"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mainPageFragmentTvPlaneNumber"
+            android:layout_width="134dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="ICAO / Callsign"
+            android:textColor="@color/title_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mainFragmentImageViewPlanePicture"
+            app:layout_constraintTop_toTopOf="@+id/mainFragmentImageViewPlanePicture" />
+
+        <TextView
+            android:id="@+id/mainPageFragmentTvLatestFlightDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="helvetica"
+            android:text="Departure date → Arrival date"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/mainPageFragmentTvLatestFlightLocation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mainFragmentImageViewPlanePicture"
+            app:layout_constraintTop_toBottomOf="@+id/mainPageFragmentTvPlaneNumber" />
+
+        <TextView
+            android:id="@+id/mainPageFragmentTvLatestFlightLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="helvetica"
+            android:text="Departure → Arrival"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/mainFragmentImageViewPlanePicture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mainFragmentImageViewPlanePicture"
+            app:layout_constraintTop_toBottomOf="@+id/mainPageFragmentTvLatestFlightDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

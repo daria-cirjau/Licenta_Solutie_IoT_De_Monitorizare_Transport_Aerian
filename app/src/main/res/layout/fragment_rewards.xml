@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcg"
+    tools:context=".mainpage.userprofile.RewardsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/rewardsFragmentTv6000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp"
+            android:text="Your reward for reaching 6000 meters."
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rewardsFragmentTvChoose"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp"
+            android:text="Choose a color for the airplanes"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rewardsFragmentTv6000" />
+
+        <ImageView
+            android:id="@+id/rewardsFragmentPlane"
+            android:layout_width="162dp"
+            android:layout_height="137dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/whiteplane"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rewardsFragmentTvChoose" />
+
+        <com.flask.colorpicker.ColorPickerView
+            android:id="@+id/rewardsFragmentColorPicker"
+            android:layout_width="278dp"
+            android:layout_height="262dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/rewardsFragmentBtnSave"
+            app:layout_constraintTop_toBottomOf="@+id/rewardsFragmentPlane" />
+
+        <Button
+            android:id="@+id/rewardsFragmentBtnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/end_color"
+            android:foreground="@drawable/btn_ripple"
+            android:onClick="savePlaneColorOnClick"
+            android:text="Save"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rewardsFragmentColorPicker" />
+
+        <ImageView
+            android:id="@+id/rewardsFragmentPadlock"
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:src="@drawable/unlocked"
+            app:layout_constraintBottom_toBottomOf="@id/rewardsFragmentBtnSave"
+            app:layout_constraintEnd_toStartOf="@id/rewardsFragmentBtnSave"
+            app:layout_constraintTop_toTopOf="@+id/rewardsFragmentBtnSave" />
+
+        <TextView
+            android:id="@+id/rewardsFragmentTv12000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="Your reward for reaching 12000 meters."
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rewardsFragmentBtnSave" />
+
+        <TextView
+            android:id="@+id/rewardsFragmentTvCrown"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Captain cap next to your name"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rewardsFragmentTv12000" />
+
+        <ImageView
+            android:layout_width="141dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/cap"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rewardsFragmentTvCrown" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

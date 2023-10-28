@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/customAdapterTvPlaneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="helvetica"
+        android:textColor="@color/title_pink"
+        android:text="Numar identificare avion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/customAdapterTvLng"
+        android:textColor="@color/title_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/customAdapterTvLat"
+        app:layout_constraintTop_toBottomOf="@+id/customAdapterTvLat"
+        app:layout_constraintVertical_bias="0.021"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="helvetica"
+        android:text="Lng"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/customAdapterTvLatValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toEndOf="@+id/customAdapterTvLat"
+        app:layout_constraintTop_toBottomOf="@+id/customAdapterTvFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="helvetica"
+        android:text="Lat" />
+
+    <TextView
+        android:id="@+id/customAdapterTvLat"
+        android:textColor="@color/title_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/customAdapterTvFrom"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customAdapterTvFrom"
+        app:layout_constraintVertical_bias="0.018"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="helvetica"
+        android:text="Lat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/customAdapterTvLngVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="helvetica"
+        android:text="Lng"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toEndOf="@+id/customAdapterTvLng"
+        app:layout_constraintTop_toBottomOf="@+id/customAdapterTvLatValue"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/customAdapterTvFrom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customAdapterTvPlaneNumber"
+        app:layout_constraintVertical_bias="0.017"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:textColor="@color/start_color"
+        android:text="From"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/customAdapterTvTo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toEndOf="@+id/customAdapterTvFrom"
+        app:layout_constraintTop_toBottomOf="@+id/customAdapterTvPlaneNumber"
+        app:layout_constraintVertical_bias="0.017"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:text="To"
+        android:textColor="@color/end_color"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="24dp"
+        android:layout_height="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/customAdapterTvTo"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/customAdapterTvFrom"
+        app:layout_constraintTop_toBottomOf="@+id/customAdapterTvPlaneNumber"
+        app:layout_constraintVertical_bias="0.036"
+        app:srcCompat="@drawable/plane" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
