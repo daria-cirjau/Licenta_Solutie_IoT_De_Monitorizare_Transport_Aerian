@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/customListTvFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fredoka_one"
+            android:gravity="center_horizontal"
+            android:text="From"
+            android:textColor="@color/title_pink"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/customListTvTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/fredoka_one"
+            android:gravity="center_horizontal"
+            android:text="To"
+            android:textColor="@color/title_pink"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/customListTvFrom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/customListTvFrom" />
+
+        <ImageView
+            android:id="@+id/customListImageView"
+            android:layout_width="62dp"
+            android:layout_height="28dp"
+            android:src="@drawable/plane"
+            app:layout_constraintBottom_toBottomOf="@+id/customListTvTo"
+            app:layout_constraintEnd_toStartOf="@+id/customListTvTo"
+            app:layout_constraintStart_toEndOf="@+id/customListTvFrom" />
+
+        <TextView
+            android:id="@+id/customListTvFromRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="N/A"
+            android:textColor="@color/start_color"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/customListTvFrom"
+            app:layout_constraintStart_toStartOf="@+id/customListTvFrom"
+            app:layout_constraintTop_toBottomOf="@+id/customListTvFrom" />
+
+        <TextView
+            android:id="@+id/customListTvToRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N/A"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/end_color"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/customListTvTo"
+            app:layout_constraintStart_toStartOf="@+id/customListTvTo"
+            app:layout_constraintTop_toBottomOf="@+id/customListTvTo" />
+
+        <TextView
+            android:id="@+id/customListTvIataCodeAirline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="IATA Code operating airline:"
+            android:textColor="@color/title_pink"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/customListImageView"
+            app:layout_constraintStart_toStartOf="@+id/customListImageView"
+            app:layout_constraintTop_toBottomOf="@+id/customListTvFromRegion" />
+
+        <TextView
+            android:id="@+id/customListTvIataCodeAirlineValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="IATA "
+            android:textColor="@color/title_blue"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/customListImageView"
+            app:layout_constraintStart_toStartOf="@+id/customListImageView"
+            app:layout_constraintTop_toBottomOf="@+id/customListTvIataCodeAirline" />
+
+
+        <TextView
+            android:id="@+id/customListTvScheduledDepTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Scheduled departure time"
+            android:textColor="@color/title_pink"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/customListImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customListTvIataCodeAirlineValue" />
+
+        <TextView
+            android:id="@+id/customListTvScheduledDepTimeValue"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="5.00pm"
+            android:textColor="@color/start_color"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/customListImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customListTvScheduledDepTime" />
+
+        <TextView
+            android:id="@+id/customListTvScheduledArrTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Scheduled arrival time"
+            android:textColor="@color/title_pink"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/customListImageView"
+            app:layout_constraintTop_toBottomOf="@+id/customListTvIataCodeAirlineValue" />
+
+        <TextView
+            android:id="@+id/customListTvScheduledArrTimeValue"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="10.00pm"
+            android:textColor="@color/end_color"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toEndOf="@+id/customListImageView"
+            app:layout_constraintTop_toBottomOf="@+id/customListTvScheduledArrTime" />
+
+        <TextView
+            android:id="@+id/customListTvPredictedDelay"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Predicted delay: "
+            android:textColor="@color/title_pink"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/customListTvScheduledArrTimeValue"
+            app:layout_constraintStart_toStartOf="@+id/customListTvScheduledDepTimeValue"
+            app:layout_constraintTop_toBottomOf="@+id/customListTvScheduledDepTimeValue" />
+
+        <TextView
+            android:id="@+id/customListTvPredictedDelayValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="10mins"
+            android:textColor="@color/start_color"
+            android:textSize="14dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/customListTvPredictedDelay"
+            app:layout_constraintStart_toStartOf="@+id/customListTvPredictedDelay"
+            app:layout_constraintTop_toBottomOf="@+id/customListTvPredictedDelay" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

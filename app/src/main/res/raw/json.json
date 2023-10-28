@@ -1,0 +1,23 @@
+{
+  "photos": [
+    {
+      "id": "1379370",
+      "thumbnail": {
+        "src": "https:\/\/t.plnspttrs.net\/47355\/1379370_e1fb02e6f7_t.jpg",
+        "size": {
+          "width": 200,
+          "height": 133
+        }
+      },
+      "thumbnail_large": {
+        "src": "https:\/\/t.plnspttrs.net\/47355\/1379370_e1fb02e6f7_280.jpg",
+        "size": {
+          "width": 421,
+          "height": 280
+        }
+      },
+      "link": "https:\/\/www.planespotters.net\/photo\/1379370\/pr-xma-gol-transportes-areos-boeing-737-8-max?utm_source=api",
+      "photographer": "Donato Bolelli"
+    }
+  ]
+}

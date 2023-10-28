@@ -1,0 +1,13 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "proiect_licenta_monitorizare_avioane"
+include ':app'
+include ':sceneform'
+project(':sceneform').projectDir = new File('sceneformsrc/sceneform')
+include ':sceneformux'
+project(':sceneformux').projectDir = new File('sceneformux/ux')

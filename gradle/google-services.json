@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "852573448570",
+    "project_id": "licenta-monitorizare-avioane",
+    "storage_bucket": "licenta-monitorizare-avioane.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852573448570:android:0fc4107dbf3866d4670ec3",
+        "android_client_info": {
+          "package_name": "com.licenta.monitorizareavioane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852573448570-n2oquo596u6oe5abipom8niee2grqb2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "MY_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852573448570-n2oquo596u6oe5abipom8niee2grqb2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
