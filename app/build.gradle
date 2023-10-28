@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+    id 'com.chaquo.python'
+//    id 'org.jetbrains.kotlin.android'
+//    id 'io.realm.kotlin' version '1.6.0' apply false
+}
+
+apply plugin: 'com.android.application'
+//apply plugin: 'kotlin-kapt'
+apply plugin: "realm-android"
+
+android {
+    namespace 'com.licenta.monitorizareavioane'
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.licenta.monitorizareavioane"
+        minSdk 26
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+        python {
+            version "3.8"
+        }
+        python {
+            pip {
+                install "joblib"
+                install "pandas==1.3.2"
+                install "scikit_learn==0.22.1"
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+realm {
+    syncEnabled = true
+}
+
+dependencies {
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-beta01'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'androidx.wear.tiles:tiles-material:1.1.0-alpha04'
+    implementation 'androidx.core:core:1.7.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    implementation 'androidx.room:room-runtime:2.5.0-alpha01'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    annotationProcessor 'androidx.room:room-compiler:2.5.0-alpha01'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    implementation 'androidx.transition:transition:1.4.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.google.ar:core:1.36.0'
+    api project(":sceneformux")
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.github.QuadFlask:colorpicker:0.0.13'
+}
